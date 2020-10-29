@@ -16,6 +16,7 @@ install:
   - yarn
   - cd ./test/smoke/templage
   - yarn
+  - cd ../../../
 
 scripts:
   yarn test
