@@ -1,0 +1,21 @@
+language: node_js
+
+# 权限
+sudo: false
+
+#缓存
+
+cache:
+  apt: true
+  directories:
+    - node_modules
+
+node_js: stable
+
+install:
+  - yarn
+  - cd ./test/smoke/templage
+  - yarn
+
+scripts:
+  yarn test
